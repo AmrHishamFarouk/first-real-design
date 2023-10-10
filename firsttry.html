@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
+
+    <script>
+        $( document ).ready(function() {
+var ctrlVideo = document.getElementById("video"); 
+ 
+$('button').click(function(){
+  if ($('button').hasClass("active")){
+    
+        ctrlVideo.play();
+    
+    $('button').html("Pause");
+    $('button').toggleClass("active");
+  } else {
+    
+        ctrlVideo.pause();
+    
+    $('button').html("play");
+    $('button').toggleClass("active");
+  }
+});
+ 
+});
+    </script>
 </head>
 
 
@@ -77,15 +100,21 @@
         <div class="one"></div>
         <div class="two"></div>
         <div class="img1"></div>
-        <div class="img2">
-            <!-- <img src="https://images.pexels.com/photos/16998658/pexels-photo-16998658/free-photo-of-houseplants-in-the-window.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image2"> -->
-        </div>
+        <div class="img2"></div>
     </div>
 
 
     <div class="section4">
         <h1>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.</h1>
         <h4>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</h4>
+    </div>
+    
+
+    <div class="section5">
+        <button class="active">play</button>
+        <video id="banner-video" preload="auto" loop>
+	        <source url="https://www.youtube.com/watch?v=yul4gq_LrOI">
+        </video>
     </div>
 </body>
 </body>

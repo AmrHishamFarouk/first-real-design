@@ -114,30 +114,35 @@ ul li a{
     display: grid;
     justify-content: stretch;
     grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows:  repeat(7,8rem);
 }
 .one{
     grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    min-height: 500px;
+    grid-row: 1 / 8;
 }
 .two{
     grid-column: 5 / 11;
     background-color: #fbffa7;
-    min-height: 500px;
-    grid-row: 1 / 2;
+    grid-row: 1 / 8;
 
 }
 .img1{
     background-image: url(https://images.pexels.com/photos/17728880/pexels-photo-17728880/free-photo-of-landscape-water-field-summer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     grid-column: 2 / 6;
-    grid-row: 1 / 2;
-    min-height: 300px;
+    grid-row: 2 / 7;
+    min-height: 30vw;
     z-index: 2;
 }
-
+.img2{
+    background-image: url(https://images.pexels.com/photos/16998658/pexels-photo-16998658/free-photo-of-houseplants-in-the-window.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 7/10;
+    grid-row: 3 / 6;
+    z-index: 2;
+}
 .section4{
     margin: 3rem 23%;
-
 }
